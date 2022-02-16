@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatDome</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="/stylesheet.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="room_display">
+            <h1 id="room_name"> </h1>
+            <button id="leave_room" onclick="location.href = 'index.html'">Leave Room</button>
+            <div id="room_window">
+                <div id="output"></div>
+                <div id="typing"></div>
+            </div>
+            <form id="send_message">
+                <input id="message" type="text" placeholder="Type a message" />
+                <button id="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
